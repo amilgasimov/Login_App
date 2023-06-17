@@ -10,12 +10,12 @@ import Profile from '../screens/Profile'
 
 const Stack = createNativeStackNavigator()
 
-const index = () => {
+const MainStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name='register' component={Register} />
                 <Stack.Screen name='login' component={LoginScreen} />
+                <Stack.Screen name='register' component={Register} />
                 <Stack.Screen name='confirm' component={Confirm} />
                 <Stack.Screen name='profile' component={Profile} />
             </Stack.Navigator>
@@ -23,6 +23,6 @@ const index = () => {
     )
 }
 
-export default index
+export default MainStack
 
 const styles = StyleSheet.create({})

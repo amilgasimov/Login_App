@@ -1,14 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import MainStack from './navigation/MainStack'
+import store from './store'
+import { Provider } from 'react-redux'
 
-import LoginScreen from './screens/Login'
-
+const Stack = createNativeStackNavigator()
 
 const App = () => {
   return (
-    <>
-      <LoginScreen />
-    </>
+    <Provider store={store}>
+      <MainStack />
+    </Provider>
   )
 }
 
