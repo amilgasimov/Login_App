@@ -24,15 +24,6 @@ const LoginScreen = ({ navigation }: any) => {
                         onChangeText={setEmail}
                     />
                 </View>
-                <View style={styles.card}>
-                    <TextInput
-                        placeholder="Password"
-                        secureTextEntry={true}
-                        style={styles.input}
-                        value={password}
-                        onChangeText={setPassword}
-                    />
-                </View>
                 <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
                     <Text style={styles.loginButtonText}>Log In</Text>
                 </TouchableOpacity>
